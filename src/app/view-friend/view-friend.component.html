@@ -9,18 +9,18 @@
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
+                            <th scope="col">Name</th>
+                            <th scope="col">friend Name</th>
+                            <th scope="col">Describe Your Friend</th>
+                            <th scope="col">Friend Nickname</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                          <tr *ngFor="let i of data">
+                            <td>{{i.name}}</td>
+                            <td>{{i.friendName}}</td>
+                            <td>{{i.DescribeYourFriend}}</td>
+                            <td>{{i.friendNickName}}</td>
                           </tr>
                         </tbody>
                       </table>
